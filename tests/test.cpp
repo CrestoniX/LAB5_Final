@@ -94,9 +94,9 @@ notCopyableStackEmpty.push_emplace(600);
 
 EXPECT_EQ(notCopyableStackEmpty.head().value, 600);
 }
-TEST_F(StackFixture, PushEmplace1)
+/*TEST_F(StackFixture, PushEmplace1)
 {
-/*notCopyableStackEmpty.push_emplace(2000, "qwe");
+notCopyableStackEmpty.push_emplace(2000, "qwe");
 EXPECT_EQ(notCopyableStackEmpty.head().value, 2000);
 notCopyableStackEmpty.pop();
 EXPECT_EQ(notCopyableStackEmpty.head().value, "qwe");
